@@ -1,0 +1,56 @@
+#services {
+    text-align: center;
+    margin-bottom: 10%;
+
+    .services_projets {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+
+        .project_item {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            max-width: 600px;
+            gap: .8rem;
+
+            img:last-child {
+                position: relative;
+            }
+
+            h3 {
+                font-weight: 500;
+                font-size: 1.3rem;
+                line-height: 29px;
+                color: $color-1;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: .875rem;
+                line-height: 22px;
+                text-align: center;
+                color: $black-color;
+                width: 285.27px;
+            }
+
+            a {
+                position: absolute;
+                right: 70px;
+                top: -30px;
+                display: block;
+                color: $color-2;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .services_projets {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

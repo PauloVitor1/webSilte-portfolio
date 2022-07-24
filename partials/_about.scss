@@ -1,0 +1,99 @@
+#about {
+    .about_content {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        place-items: center;
+
+        .about_info {
+            h1 {
+                font-weight: 400;
+                font-size: 2.5rem;
+                line-height: 58px;
+                color: $color-1;
+                position: relative;
+
+
+                &::before {
+                    content: "A BIT";
+                    display: block;
+                    font-size: 1.125rem;
+                    line-height: 1.2;
+                    color: $color-2;
+                    bottom: 4rem;
+                    position: absolute;
+                    text-transform: none;
+                    font-weight: 500;
+                }
+            }
+
+            .about_items {
+                display: grid;
+                grid-template-columns: 150px 150px;
+                margin-top: 1rem;
+                margin-bottom: 1.5rem;
+                gap: 1.4rem;
+
+                .about_item {
+                    display: flex;
+                    align-items: center;
+                    gap: .5rem;
+
+
+                    h4 {
+                        font-weight: 500;
+                        font-size: .875rem;
+                        line-height: 23px;
+                        color: $color-2;
+                    }
+
+                    span {
+                        font-weight: 400;
+                        font-size: .875rem;
+                        line-height: 23px;
+                    }
+                }
+
+                .about_item:last-child {
+                    width: 240px;
+                }
+
+            }
+
+            .download {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                button {
+                    padding: .5rem 2rem;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #about {
+
+        p {
+            font-size: 1rem;
+        }
+
+        .about_content {
+            grid-template-columns: 30% 70%;
+            gap: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #about {
+        .about_content {
+            grid-template-columns: 1fr;
+            .img {
+                order: 2;
+            }
+        }
+    }
+}

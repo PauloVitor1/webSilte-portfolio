@@ -1,0 +1,18 @@
+@mixin gradientBackground {
+    background: linear-gradient(180deg, rgba(236, 178, 46, 1) -400%, rgba(255, 255, 255, 1) 45%) top no-repeat;
+}
+
+$color-1: rgba(0, 0, 0, 0.81);
+$color-2: #FCC028;
+$color-3: #207733;
+$black: #000000;
+$white: #FFFFFF;
+
+$orange: rgba(236, 178, 46, 0) -4.71%;
+$black-color: rgba(0, 0, 0, 0.5);
+$font-famaly: 'Poppins',
+sans-serif;
+
+
+$container-lg: 82%;
+$container-md: 90%;

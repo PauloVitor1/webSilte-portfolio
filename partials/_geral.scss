@@ -1,0 +1,103 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @include gradientBackground();
+    font-family: $font-famaly;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.2;
+}
+
+
+.container {
+    width: $container-lg;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+}
+
+
+.btn {
+    font: normal 500 0.912rem / 22px 'Poppins', Sans-serif;
+    padding: .5rem 1.8rem;
+    background: $color-2;
+    cursor: pointer;
+    border-radius: 4px;
+    color: $white;
+
+    &:hover {
+        background: lighten($color-2, 15%);
+    }
+}
+
+.style-p {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    color: $black-color;
+}
+
+.bxs-download {
+    cursor: pointer;
+    color: $color-2;
+}
+
+.btn-details {
+    background: none;
+    padding: .5rem 2rem;
+    border: 1px solid $color-2;
+    color: $color-2;
+    border-radius: 9.73611px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-2;
+        color: $white;
+    }
+}
+
+.number_studies {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 47px;
+    color: $color-2;
+}
+
+.section__title {
+
+    h2 {
+        font-weight: 500;
+        display: block;
+        font-size: 1.875rem;
+        line-height: 47px;
+        color: $color-1;
+        margin-bottom: 1rem;
+        top: 100px;
+        text-align: center;
+
+    }
+
+    span {
+        display: block;
+        font-size: 1.125rem;
+        line-height: 1.2;
+        color: $color-2;
+        text-align: center;
+        text-transform: none;
+        font-weight: 500;
+    }
+}

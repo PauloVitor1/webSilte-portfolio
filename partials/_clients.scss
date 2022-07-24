@@ -1,0 +1,31 @@
+.clients {
+    margin-bottom: 5%;
+
+    .container {
+        .section__title {
+            margin-bottom: 5%;
+        }
+
+        .clients__logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 6rem;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .clients {
+        .container {
+            .section__title {
+                margin-bottom: 8%;
+            }
+
+            .clients {
+                gap: 1rem;
+            }
+        }
+    }
+}
